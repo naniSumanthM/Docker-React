@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t nani9571/Docker-React -f Dockerfile.dev .
+  - docker build -t nani9571/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run nani9571/Docker-React npm run test -- --coverage
+  - docker run nani9571/docker-react npm run test -- --coverage
